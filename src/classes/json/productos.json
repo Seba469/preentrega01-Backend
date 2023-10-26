@@ -1,0 +1,47 @@
+[
+	{
+		"id": "223afc",
+		"title": "pepino",
+		"description": "Pepino is a species of small tree native to the Mediterranean region. It has been cultivated for its",
+		"price": 120,
+		"thumbnail": "fotoPepino.jpg",
+		"code": "cod1",
+		"stock": 22
+	},
+	{
+		"id": "d6fa6823-a8c7-450a-8d5b-92dbe73ea6de",
+		"title": "remera",
+		"description": "remera roja",
+		"price": 120,
+		"thumbnail": "remeraRoja.jpg",
+		"code": "cod3",
+		"stock": 30
+	},
+	{
+		"id": "d6fa6s23-a567-450a-8efb-92dwf43ea6de",
+		"title": "pantalon",
+		"description": "pantalon verde",
+		"price": 120,
+		"thumbnail": "pantalonVerde.jpg",
+		"code": "cod4",
+		"stock": 30
+	},
+	{
+		"id": "dkfe4423-a567-450a-8efb-92dwf43ea6de",
+		"title": "campera",
+		"description": "campera negra",
+		"price": 120,
+		"thumbnail": "camperaNegra.jpg",
+		"code": "cod5",
+		"stock": 30
+	},
+	{
+		"title": "buzo",
+		"description": "buzo blanco",
+		"price": 120,
+		"thumbnail": "buzoBlanco.jpg",
+		"code": "cod7",
+		"stock": 30,
+		"id": "102c8336-01ff-4328-a86f-b132d3b2c772"
+	}
+]
