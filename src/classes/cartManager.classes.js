@@ -22,7 +22,7 @@ export default class CartManager{
         try{
             const carts = await this.getCarts();
             
-            const carroFiltrado = carts.filter(cart => cart.id === id)
+            const carroFiltrado = carts.find(cart => cart.id === id)
 
             if (carroFiltrado.length === 0){  
                 return "No se encontro ese carro"
@@ -64,9 +64,7 @@ export default class CartManager{
             if (typeof product === "string"){
                 return "El producto no existe"
             }
-
             console.log(cartById)
-            console.log(cartById.products)
             const index = cartById.products.findIndex(prod => prod.id === productId)
 
             if (index === -1) {

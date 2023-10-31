@@ -32,7 +32,7 @@ export default class ProductManager{
             const products = await this.getProducts()
         
             const productoFiltrado = products.filter(prod => prod.id === id)
-            
+
             if (productoFiltrado.length === 0){  
                 return "No se encontro ese producto"
             }
@@ -113,13 +113,6 @@ export default class ProductManager{
             
             await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'))
             return "Producto actualizado correctamente"
-            /*const productos = await this.getProducts()
-            const indice = productos.findIndex(prod => prod.id === id)
-
-            productos[indice] = {...productos[indice], ...infoNueva}
-
-            console.log("producto actualizado correctamente")
-            await fs.promises.writeFile(path, JSON.stringify(productos, null, '\t'))*/
         }
         catch(error){
             console.log(`Ocurrio un error ${error.message}`)

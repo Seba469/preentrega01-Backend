@@ -1,7 +1,12 @@
 [
 	{
 		"id": "d553a2a9-3247-4012-9c12-bace8e28265d",
-		"products": []
+		"products": [
+			{
+				"id": "223afc",
+				"quantity": 3
+			}
+		]
 	},
 	{
 		"id": "b3124e12-4d64-4f44-b4cc-58e780a21d4b",
