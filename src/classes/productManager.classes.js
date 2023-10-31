@@ -90,23 +90,6 @@ export default class ProductManager{
             console.log(`Ocurrio un error ${error.message}`)
         }
     }   
-    
-    /*updateProduct = async (id, title, description, price, thumbnail, code, stock) => {
-
-        const products = await this.getProducts()
-    
-        const productObject = {id, title, description, price, thumbnail, code, stock}
-        const productoFiltrado = products.filter(prod => prod.id === id)
-    
-        const updatedProduct = {...productoFiltrado[0], ...productObject}
-    
-        const index = products.findIndex(prod => prod.id === id)
-        products.slice(index, 1, updatedProduct )
-        
-    
-        await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'))
-        
-    }*/
 
     updateProduct = async (id, newData) => {
         try{
@@ -119,7 +102,13 @@ export default class ProductManager{
 
             const index = products.findIndex(prod => prod.id === id)
                 
-            const newProduct = {...product, ...newData}
+            const newProduct = {...products[index]}
+            for (let key in newData){
+                if (key !== "id"){
+                    newProduct[key] = newData[key]
+                }
+            }
+
             products[index] = newProduct
             
             await fs.promises.writeFile(path, JSON.stringify(products, null, '\t'))
